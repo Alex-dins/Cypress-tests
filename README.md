@@ -1,6 +1,7 @@
 # Cypress-tests
 In this repository you will find my Cypress test cases that I wrote during course.
 
+Status: Ongoing
 
  - Node version: v16.16.0
 
