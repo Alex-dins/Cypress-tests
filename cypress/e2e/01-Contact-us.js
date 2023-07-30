@@ -13,6 +13,9 @@ describe('Test contact us form via WebDriverUni', () => {
         cy.title().should("include", "WebDriver | Contact Us");
         cy.url().should("contain", "contactus")
         cy.get(".section_header").should("have.text", "CONTACT US");
+
+        cy.get("input[name='first_name']").type("Joe");
+        cy.get("input[name='first_name']").should("have.attr", "placeholder", "First Name")
     });
 })
 
