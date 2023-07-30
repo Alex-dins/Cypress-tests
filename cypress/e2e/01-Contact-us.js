@@ -14,8 +14,14 @@ describe('Test contact us form via WebDriverUni', () => {
         cy.url().should("contain", "contactus")
         cy.get(".section_header").should("have.text", "CONTACT US");
 
-        cy.get("input[name='first_name']").type("Joe");
-        cy.get("input[name='first_name']").should("have.attr", "placeholder", "First Name")
+        cy.getByInput("first_name").type("Joe");
+        cy.getByInput("first_name").should("have.attr", "placeholder", "First Name")
+        cy.getByInput("last_name").type("Smith");
+        cy.getByInput("email").type("joe_smith@mail.com");
+        cy.get("textarea[name='message']").type("Hello, I am submitting a form for testing");
+        cy.get("input[type='submit']").click();
+        cy.get("h1").contains("Thank You for your Message!");
+        cy.get("#fountainG").should("be.visible");
     });
 })
 
