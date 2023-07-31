@@ -2,7 +2,7 @@
 
 describe('Test contact us form via WebDriverUni', () => {
     //Load data from fixtures
-    beforeEach(() => {
+    before(() => {
         cy.fixture('credentials').then((data) => {
             globalThis.data = data;
         })
