@@ -30,6 +30,15 @@ describe('Test contact us form via WebDriverUni', () => {
         cy.get("h1").contains("Thank You for your Message!");
         cy.get("#fountainG").should("be.visible");
     });
+    // Unsuccessful submission
+    it('Should not be able to submit a successful submission via contact us form as all fields are required', () => {
+        cy.location("pathname").should("eq", "/Contact-Us/contactus.html")
+        cy.getByInput("first_name").type(data.firstName);
+        cy.getByInput("last_name").type(data.lastName);
+        cy.get("textarea[name='message']").type(data.message);
+        cy.get("input[type='submit']").click();
+        cy.get("body").contains("Error: all fields are required");
+    });
 })
 
 
