@@ -5,8 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8b5d2542-460a-400f-a156-3423186337af" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cypress/e2e/web-driver-uni/01-Contact-us.js" beforeDir="false" afterPath="$PROJECT_DIR$/cypress/e2e/web-driver-uni/01-Contact-us.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cypress/support/commands.js" beforeDir="false" afterPath="$PROJECT_DIR$/cypress/support/commands.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,6 +28,10 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="JsBowerSettings">
+    <bower-package value="" />
+    <bower.json value="" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -51,7 +57,7 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "actions.on.save",
+    "settings.editor.selected.configurable": "preferences.sourceCode.JavaScript",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -165,7 +171,15 @@
       <option name="project" value="LOCAL" />
       <updated>1690790264648</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="add second test &quot;Unsuccessful submission&quot;">
+      <option name="closed" value="true" />
+      <created>1690798990589</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1690798990589</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -214,7 +228,8 @@
     <MESSAGE value="Added env file with url" />
     <MESSAGE value="update url" />
     <MESSAGE value="update test" />
-    <option name="LAST_COMMIT_MESSAGE" value="update test" />
+    <MESSAGE value="add second test &quot;Unsuccessful submission&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="add second test &quot;Unsuccessful submission&quot;" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

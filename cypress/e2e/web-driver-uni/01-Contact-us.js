@@ -10,9 +10,7 @@ describe('Test contact us form via WebDriverUni', () => {
     // Visit page http://webdriveruniversity.com/
     beforeEach(() => {
         cy.visit(Cypress.env("baseUrl"));
-        cy.get("#contact-us")
-          .invoke("removeAttr", "target")
-          .click({force: true});
+        cy.selectedPage('#contact-us');
     })
     // Successful submission
     it('Should be able to submit a successful submission via contact us form', () => {
@@ -21,22 +19,22 @@ describe('Test contact us form via WebDriverUni', () => {
         cy.url().should("contain", "contactus")
         cy.get(".section_header").should("have.text", "CONTACT US");
 
-        cy.getByInput("first_name").type(data.firstName);
-        cy.getByInput("first_name").should("have.attr", "placeholder", "First Name")
-        cy.getByInput("last_name").type(data.lastName);
-        cy.getByInput("email").type(data.email);
+        cy.getByInput("name=first_name").type(data.firstName);
+        cy.getByInput("name=first_name").should("have.attr", "placeholder", "First Name")
+        cy.getByInput("name=last_name").type(data.lastName);
+        cy.getByInput("name=email").type(data.email);
         cy.get("textarea[name='message']").type(data.message);
-        cy.get("input[type='submit']").click();
+        cy.getByInput("type=submit").click();
         cy.get("h1").contains("Thank You for your Message!");
         cy.get("#fountainG").should("be.visible");
     });
     // Unsuccessful submission
     it('Should not be able to submit a successful submission via contact us form as all fields are required', () => {
         cy.location("pathname").should("eq", "/Contact-Us/contactus.html")
-        cy.getByInput("first_name").type(data.firstName);
-        cy.getByInput("last_name").type(data.lastName);
+        cy.getByInput("name=first_name").type(data.firstName);
+        cy.getByInput("name=last_name").type(data.lastName);
         cy.get("textarea[name='message']").type(data.message);
-        cy.get("input[type='submit']").click();
+        cy.getByInput("type=submit").click();
         cy.get("body").contains("Error: all fields are required");
     });
 })
