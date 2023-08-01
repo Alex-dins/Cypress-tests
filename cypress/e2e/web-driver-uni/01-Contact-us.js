@@ -7,9 +7,9 @@ describe('Test contact us form via WebDriverUni', () => {
             globalThis.data = data;
         })
     })
-    // Visit page http://webdriveruniversity.com/
+    // Visit page http://webdriveruniversity.com/Contact-Us/contactus.html
     beforeEach(() => {
-        cy.visit(Cypress.env("baseUrl"));
+        cy.visit("/");
         cy.selectedPage('#contact-us');
     })
     // Successful submission

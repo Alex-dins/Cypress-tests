@@ -1,9 +1,9 @@
 /// <reference types = "Cypress" />
 
 describe('Handling js alerts', () => {
-    // Visit page http://webdriveruniversity.com/
+    // Visit page http://webdriveruniversity.com/Popup-Alerts/index.html
     beforeEach(() => {
-        cy.visit(Cypress.env("baseUrl"));
+        cy.visit("/");
         cy.selectedPage('#popup-alerts');
     })
 
@@ -14,4 +14,12 @@ describe('Handling js alerts', () => {
             expect(str).to.eq("I am an alert box!")
         });
     });
+
+    it('Confirm js alert when clicking ok', () => {
+        cy.get("#button4").click();
+        cy.on("window:confirm", () => {
+            return true;
+        });
+        cy.get("#confirm-alert-text").contains("You pressed OK!");
+    })
 });
