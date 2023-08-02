@@ -22,4 +22,12 @@ describe('Handling js alerts', () => {
         });
         cy.get("#confirm-alert-text").contains("You pressed OK!");
     })
+
+    it('Confirm js alert when clicking cancel', () => {
+        cy.get("#button4").click();
+        cy.on("window:confirm", () => {
+            return false;
+        });
+        cy.get("#confirm-alert-text").contains("You pressed Cancel!");
+    })
 });
