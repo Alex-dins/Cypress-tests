@@ -1,16 +1,16 @@
 /// <reference types = "Cypress" />
 
-describe('Test contact us form via WebDriverUni', () => {
+describe("Test contact us form via WebDriverUni", () => {
     //Load data from fixtures
     before(() => {
-        cy.fixture('credentials').then((data) => {
+        cy.fixture("credentials").then((data) => {
             globalThis.data = data;
         })
     })
     // Visit page http://webdriveruniversity.com/Contact-Us/contactus.html
     beforeEach(() => {
         cy.visit("/");
-        cy.selectedPage('#contact-us');
+        cy.selectedPage("#contact-us");
     })
     // Successful submission
     it('Should be able to submit a successful submission via contact us form', () => {
@@ -29,7 +29,7 @@ describe('Test contact us form via WebDriverUni', () => {
         cy.get("#fountainG").should("be.visible");
     });
     // Unsuccessful submission
-    it('Should not be able to submit a successful submission via contact us form as all fields are required', () => {
+    it("Should not be able to submit a successful submission via contact us form as all fields are required", () => {
         cy.location("pathname").should("eq", "/Contact-Us/contactus.html")
         cy.getByInput("name=first_name").type(data.firstName);
         cy.getByInput("name=last_name").type(data.lastName);

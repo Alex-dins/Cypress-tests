@@ -5,8 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8b5d2542-460a-400f-a156-3423186337af" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/cypress/e2e/web-driver-uni/Checkboxes.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cypress.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/cypress.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cypress/e2e/web-driver-uni/01-Contact-us.js" beforeDir="false" afterPath="$PROJECT_DIR$/cypress/e2e/web-driver-uni/01-Contact-us.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cypress/e2e/web-driver-uni/02-Alerts.js" beforeDir="false" afterPath="$PROJECT_DIR$/cypress/e2e/web-driver-uni/02-Alerts.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cypress/e2e/web-driver-uni/03-Iframe.js" beforeDir="false" afterPath="$PROJECT_DIR$/cypress/e2e/web-driver-uni/03-Iframe.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,7 +58,7 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "Errors",
+    "settings.editor.selected.configurable": "watcher.settings",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -85,7 +88,7 @@
     </recent_temporary>
   </component>
   <component name="SeleniumInternalSettingsState">
-    <option name="lastUrl" value="http://webdriveruniversity.com/IFrame/index.html" />
+    <option name="lastUrl" value="http://webdriveruniversity.com/Dropdown-Checkboxes-RadioButtons/index.html" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -225,7 +228,15 @@
       <option name="project" value="LOCAL" />
       <updated>1691051065479</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="change url in config file">
+      <option name="closed" value="true" />
+      <created>1691133053311</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1691133053311</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -277,7 +288,8 @@
     <MESSAGE value="add second test &quot;Unsuccessful submission&quot;" />
     <MESSAGE value="add test &quot;handling js alerts&quot;" />
     <MESSAGE value="add another test &quot;handling js alerts&quot;" />
-    <option name="LAST_COMMIT_MESSAGE" value="add another test &quot;handling js alerts&quot;" />
+    <MESSAGE value="change url in config file" />
+    <option name="LAST_COMMIT_MESSAGE" value="change url in config file" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
