@@ -5,8 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8b5d2542-460a-400f-a156-3423186337af" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/cypress/e2e/web-driver-uni/05-Dropdown-list.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cypress/e2e/web-driver-uni/04-Checkboxes.js" beforeDir="false" afterPath="$PROJECT_DIR$/cypress/e2e/web-driver-uni/04-Checkboxes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cypress/support/commands.js" beforeDir="false" afterPath="$PROJECT_DIR$/cypress/support/commands.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,10 +36,10 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "customColor": "",
-  "associatedIndex": -1
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: -1
+}</component>
   <component name="ProjectId" id="2TI37AcbWvG94Nm1J3RwFPYMbza" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -90,7 +92,7 @@
     </recent_temporary>
   </component>
   <component name="SeleniumInternalSettingsState">
-    <option name="lastUrl" value="http://webdriveruniversity.com/Dropdown-Checkboxes-RadioButtons/index.html" />
+    <option name="lastUrl" value="http://webdriveruniversity.com/Autocomplete-TextField/autocomplete-textfield.html" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -102,7 +104,8 @@
       <updated>1690716597834</updated>
       <workItem from="1690716598830" duration="1784000" />
       <workItem from="1691215803653" duration="5003000" />
-      <workItem from="1691388070301" duration="1872000" />
+      <workItem from="1691388070301" duration="2388000" />
+      <workItem from="1691493747566" duration="1665000" />
     </task>
     <task id="LOCAL-00001" summary="Added env file with url">
       <option name="closed" value="true" />
@@ -264,7 +267,15 @@
       <option name="project" value="LOCAL" />
       <updated>1691322793814</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="update existing test in checkbox file">
+      <option name="closed" value="true" />
+      <created>1691436790252</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1691436790252</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

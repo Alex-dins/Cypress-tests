@@ -32,7 +32,7 @@ describe("Handle checkboxes", () => {
         cy.getByValue("pumpkin").should("not.be.checked");
     })
 
-    it.only("Validate and check dropdown menu", () => {
+    it("Validate and check dropdown menu", () => {
         //Assertion of the first dropdown menu
         cy.get("#dropdowm-menu-1").contains("JAVA");
         cy.get("#dropdowm-menu-1")

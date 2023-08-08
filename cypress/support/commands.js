@@ -6,7 +6,6 @@ Cypress.Commands.add("selectedPage", (selectedPage) => {
       .invoke("removeAttr", "target")
       .click({force: true});
 });
-
 Cypress.Commands.add("getByValue", (selector) => {
     cy.get(`[value=${selector}]`);
 });
