@@ -1,7 +1,9 @@
 /// <reference types = "Cypress" />
 import {ContactUsPage} from "../../support/PageObjects/web-driver-uni/contactUs";
+import {HomePage} from "../../support/PageObjects/web-driver-uni/homePage";
 
 const contactUsPage = new ContactUsPage();
+const homePage = new HomePage();
 
 describe("Test contact us form via WebDriverUni", () => {
     //Load data from fixtures
@@ -12,7 +14,8 @@ describe("Test contact us form via WebDriverUni", () => {
     })
     // Visit page http://webdriveruniversity.com/Contact-Us/contactus.html
     beforeEach(() => {
-        contactUsPage.goToContactUsPage();
+        cy.visit("/");
+        homePage.goToContactUsPage();
     })
     // Successful submission
     it("Should be able to submit a successful submission via contact us form", () => {

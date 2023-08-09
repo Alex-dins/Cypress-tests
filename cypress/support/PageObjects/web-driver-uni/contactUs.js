@@ -1,9 +1,4 @@
 export class ContactUsPage {
-    goToContactUsPage() {
-        cy.visit("/");
-        cy.selectedPage("#contact-us");
-        return this;
-    }
 
     firstNameInput() {
         return cy.getByInput("name=first_name");
