@@ -19,4 +19,29 @@ export class ContactUsPage {
     submitButton() {
         return cy.getByInput("type=submit");
     }
+
+    pathName() {
+        return cy.location("pathname");
+    }
+
+    successfulMessage() {
+        cy.get("h1").contains("Thank You for your Message!");
+        cy.get("#fountainG").should("be.visible");
+        return this;
+    }
+
+    errorMessage() {
+        return cy.get("body");
+    }
+
+    header() {
+        return cy.get(".section_header");
+    }
+
+    checkMetaData() {
+        cy.document().should("have.property", "charset").and("eq", "UTF-8")
+        cy.title().should("include", "WebDriver | Contact Us");
+        cy.url().should("contain", "contactus");
+        return this;
+    }
 }

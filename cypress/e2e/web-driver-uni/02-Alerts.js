@@ -1,10 +1,12 @@
 /// <reference types = "Cypress" />
+import {HomePage} from "../../support/PageObjects/web-driver-uni/homePage";
+
+const homePage = new HomePage();
 
 describe("Handling js alerts", () => {
     // Visit page http://webdriveruniversity.com/Popup-Alerts/index.html
     beforeEach(() => {
-        cy.visit("/");
-        cy.selectedPage("#popup-alerts");
+        homePage.goToAlertsPage();
     })
 
     it("Confirm js alert contains the correct text", () => {
