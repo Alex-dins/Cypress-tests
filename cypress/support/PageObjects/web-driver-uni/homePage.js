@@ -1,12 +1,10 @@
 export class HomePage {
     goToContactUsPage() {
-        cy.visit("/");
         cy.selectedPage("#contact-us");
         return this;
     }
 
     goToAlertsPage() {
-        cy.visit("/");
         cy.selectedPage("#popup-alerts");
         return this;
     }

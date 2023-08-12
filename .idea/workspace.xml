@@ -5,13 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8b5d2542-460a-400f-a156-3423186337af" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/cypress/e2e/web-driver-uni/06-Mouse-actions.cy.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cypress/support/PageObjects/web-driver-uni/mouseActionPage.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cypress/e2e/web-driver-uni/01-Contact-us.js" beforeDir="false" afterPath="$PROJECT_DIR$/cypress/e2e/web-driver-uni/01-Contact-us.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cypress/e2e/web-driver-uni/02-Alerts.js" beforeDir="false" afterPath="$PROJECT_DIR$/cypress/e2e/web-driver-uni/02-Alerts.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cypress/support/PageObjects/web-driver-uni/contactUs.js" beforeDir="false" afterPath="$PROJECT_DIR$/cypress/support/PageObjects/web-driver-uni/contactUs.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cypress/e2e/web-driver-uni/06-Mouse-actions.cy.js" beforeDir="false" afterPath="$PROJECT_DIR$/cypress/e2e/web-driver-uni/06-Mouse-actions.cy.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cypress/support/PageObjects/web-driver-uni/homePage.js" beforeDir="false" afterPath="$PROJECT_DIR$/cypress/support/PageObjects/web-driver-uni/homePage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cypress/support/PageObjects/web-driver-uni/mouseActionPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/cypress/support/PageObjects/web-driver-uni/mouseActionPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cypress/support/commands.js" beforeDir="false" afterPath="$PROJECT_DIR$/cypress/support/commands.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -126,7 +126,7 @@
       <workItem from="1691388070301" duration="2388000" />
       <workItem from="1691493747566" duration="2660000" />
       <workItem from="1691513978046" duration="604000" />
-      <workItem from="1691514829354" duration="15196000" />
+      <workItem from="1691514829354" duration="22208000" />
     </task>
     <task id="LOCAL-00001" summary="Added env file with url">
       <option name="closed" value="true" />
@@ -352,7 +352,15 @@
       <option name="project" value="LOCAL" />
       <updated>1691587501576</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="update existing test">
+      <option name="closed" value="true" />
+      <created>1691743429420</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1691743429420</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

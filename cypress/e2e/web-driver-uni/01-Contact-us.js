@@ -15,6 +15,7 @@ describe("Test contact us form via WebDriverUni", () => {
     // Visit page http://webdriveruniversity.com/Contact-Us/contactus.html
     beforeEach(() => {
         homePage.goToContactUsPage();
+
     })
     // Successful submission
     it("Should be able to submit a successful submission via contact us form", () => {
