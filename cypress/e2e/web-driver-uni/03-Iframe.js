@@ -1,25 +1,24 @@
 /// <reference types = "Cypress" />
+import {HomePage} from "../../support/PageObjects/web-driver-uni/homePage";
+import {IFramePage} from "../../support/PageObjects/web-driver-uni/iFramePage";
+
+const homePage = new HomePage();
+const iFramePage = new IFramePage();
 
 describe("Handling iframe and modals", () => {
     // Visit page http://webdriveruniversity.com/Popup-Alerts/index.html
     beforeEach(() => {
-        cy.visit("/");
-        cy.selectedPage("#iframe");
+        homePage.goToIframePage();
     })
 
     it("Handle iframe and modals", () => {
-        cy.get("#frame").then(($iframe) => {
-            const body = $iframe.contents().find("body");
-            cy.wrap(body).as("iframe");
-        });
-        cy.get("@iframe").find("#button-find-out-more").click();
-        cy.get("@iframe").find(".modal-content").should("be.visible");
-        cy.get("@iframe").find("#myModal").as("modal");
-        cy.get("@modal").should(($expectedText) => {
-            const text = $expectedText.text();
-            expect(text).to.include("Welcome to webdriveruniversity.com we sell a wide range of electrical goods");
-        });
-        cy.get("@modal").find("button").eq(1).click();
-        cy.get("@iframe").find(".modal-content").should("not.be.visible");
+        iFramePage.getIframeElement();
+        iFramePage.findOutMoreButton().click();
+        iFramePage.modalWindowContent().should("be.visible");
+        iFramePage.getModalWindow();
+        iFramePage.checkModalWindowText(
+            "Welcome to webdriveruniversity.com we sell a wide range of electrical goods");
+        iFramePage.modalWindowCloseButton().click();
+        iFramePage.modalWindowContent().should("not.be.visible");
     });
 });
