@@ -1,9 +1,11 @@
 /// <reference types = "Cypress" />
+import {HomePage} from "../../support/PageObjects/web-driver-uni/homePage";
+
+const homePage = new HomePage();
 
 describe("Handle checkboxes", () => {
     beforeEach(() => {
-        cy.visit("/");
-        cy.selectedPage("#dropdown-checkboxes-radiobuttons");
+        homePage.goToCheckboxesPage();
     })
 
     it("Validate and check checkboxes", () => {

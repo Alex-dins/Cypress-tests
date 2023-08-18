@@ -1,12 +1,11 @@
 export class HomePage {
     goToContactUsPage() {
-        cy.selectedPage("#contact-us");
-        return this;
+        return cy.selectedPage("#contact-us");
+
     }
 
     goToAlertsPage() {
-        cy.selectedPage("#popup-alerts");
-        return this;
+        return cy.selectedPage("#popup-alerts");
     }
 
     goToIframePage() {

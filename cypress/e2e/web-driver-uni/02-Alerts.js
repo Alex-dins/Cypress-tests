@@ -1,7 +1,10 @@
 /// <reference types = "Cypress" />
 import {HomePage} from "../../support/PageObjects/web-driver-uni/homePage";
+import {AlertsPage} from "../../support/PageObjects/web-driver-uni/alertsPage";
 
 const homePage = new HomePage();
+const alertPage = new AlertsPage();
+
 
 describe("Handling js alerts", () => {
     // Visit page http://webdriveruniversity.com/Popup-Alerts/index.html
@@ -10,26 +13,20 @@ describe("Handling js alerts", () => {
     })
 
     it("Confirm js alert contains the correct text", () => {
-        cy.get("h1").should("have.text", "Annoying Popup & Alerts!");
-        cy.get("#button1").click();
-        cy.on("window:alert", (str) => {
-            expect(str).to.eq("I am an alert box!")
-        });
+        alertPage.mainHeader().should("have.text", "Annoying Popup & Alerts!");
+        alertPage.alertClickMeButton().click();
+        alertPage.windowAlertText("I am an alert box!");
     });
 
     it("Confirm js alert when clicking ok", () => {
-        cy.get("#button4").click();
-        cy.on("window:confirm", () => {
-            return true;
-        });
-        cy.get("#confirm-alert-text").contains("You pressed OK!");
+        alertPage.confirmBoxClickMeButton().click();
+        alertPage.windowAlertClickOk();
+        alertPage.alertMessage("You pressed OK!");
     })
 
     it("Confirm js alert when clicking cancel", () => {
-        cy.get("#button4").click();
-        cy.on("window:confirm", () => {
-            return false;
-        });
-        cy.get("#confirm-alert-text").contains("You pressed Cancel!");
+        alertPage.confirmBoxClickMeButton().click();
+        alertPage.windowAlertClickCancel();
+        alertPage.alertMessage("You pressed Cancel!");
     })
 });
