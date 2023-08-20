@@ -10,3 +10,6 @@ Cypress.Commands.add("selectedPage", (selectedPage) => {
 Cypress.Commands.add("getByValue", (selector) => {
     cy.get(`[value=${selector}]`);
 });
+Cypress.Commands.add("getByDropdownMenu", (nbr) => {
+    cy.get(`#dropdowm-menu-${nbr}`);
+});

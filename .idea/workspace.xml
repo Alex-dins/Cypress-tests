@@ -5,11 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8b5d2542-460a-400f-a156-3423186337af" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/cypress/support/PageObjects/web-driver-uni/alertsPage.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cypress/support/PageObjects/web-driver-uni/checkboxesPage.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cypress/e2e/web-driver-uni/02-Alerts.js" beforeDir="false" afterPath="$PROJECT_DIR$/cypress/e2e/web-driver-uni/02-Alerts.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cypress/e2e/web-driver-uni/04-Checkboxes.js" beforeDir="false" afterPath="$PROJECT_DIR$/cypress/e2e/web-driver-uni/04-Checkboxes.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cypress/support/PageObjects/web-driver-uni/homePage.js" beforeDir="false" afterPath="$PROJECT_DIR$/cypress/support/PageObjects/web-driver-uni/homePage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cypress/support/commands.js" beforeDir="false" afterPath="$PROJECT_DIR$/cypress/support/commands.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -124,7 +123,7 @@
       <workItem from="1691388070301" duration="2388000" />
       <workItem from="1691493747566" duration="2660000" />
       <workItem from="1691513978046" duration="604000" />
-      <workItem from="1691514829354" duration="49355000" />
+      <workItem from="1691514829354" duration="58703000" />
     </task>
     <task id="LOCAL-00001" summary="Added env file with url">
       <option name="closed" value="true" />
@@ -374,7 +373,15 @@
       <option name="project" value="LOCAL" />
       <updated>1692028036839</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="update Alerts tests to page objects">
+      <option name="closed" value="true" />
+      <created>1692336702931</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1692336702931</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -443,7 +450,8 @@
     <MESSAGE value="update existing test, add dropdown list test" />
     <MESSAGE value="update existing test" />
     <MESSAGE value="update iFrame tests" />
-    <option name="LAST_COMMIT_MESSAGE" value="update iFrame tests" />
+    <MESSAGE value="update Alerts tests to page objects" />
+    <option name="LAST_COMMIT_MESSAGE" value="update Alerts tests to page objects" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
