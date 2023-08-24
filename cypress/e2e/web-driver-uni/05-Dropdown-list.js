@@ -1,27 +1,21 @@
 /// <reference types = "Cypress" />
+import {HomePage} from "../../support/PageObjects/web-driver-uni/homePage";
+import {DropdownListPage} from "../../support/PageObjects/web-driver-uni/dropdownListPage";
 
+const homePage = new HomePage();
+const dropdownListPage = new DropdownListPage();
 describe("Verify dropdown list", () => {
 
     before(() => {
-        cy.visit("/");
-        cy.selectedPage("#autocomplete-textfield");
+        homePage.goToDropdownListPage();
     })
 
     it("should select specific product from list", () => {
-        cy.get("h2").should("have.text", "Autocomplete TextField");
-        cy.get("#shop-logo").should("be.visible");
-
-        cy.get("#myInput").type("A");
-        cy.get("#myInputautocomplete-list > *")
-          .each(($el) => {
-              const element = $el.text();
-              const productToSelect = "Avacado";
-
-              if (element === productToSelect) {
-                  $el.trigger("click");
-                  cy.get("#submit-button").click();
-                  cy.url().should("contain", productToSelect);
-              }
-          })
+        dropdownListPage.mainHeader("Autocomplete TextField");
+        dropdownListPage.logo().should("be.visible");
+        dropdownListPage.inputField().type("A");
+        dropdownListPage.selectProductList("Avacado");
+        dropdownListPage.submitButton().click();
+        dropdownListPage.url().should("contain", "Avacado");
     });
 })

@@ -5,10 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8b5d2542-460a-400f-a156-3423186337af" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/cypress/support/PageObjects/web-driver-uni/checkboxesPage.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cypress/support/PageObjects/web-driver-uni/dropdownListPage.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cypress/e2e/web-driver-uni/04-Checkboxes.js" beforeDir="false" afterPath="$PROJECT_DIR$/cypress/e2e/web-driver-uni/04-Checkboxes.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cypress/support/commands.js" beforeDir="false" afterPath="$PROJECT_DIR$/cypress/support/commands.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cypress/e2e/web-driver-uni/05-Dropdown-list.js" beforeDir="false" afterPath="$PROJECT_DIR$/cypress/e2e/web-driver-uni/05-Dropdown-list.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,24 +48,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.sourceCode.JavaScript&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;/Applications/Aqua 2023.1 EAP.app/Contents/plugins/javascript-impl/jsLanguageServicesImpl/external&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "selenium.settings",
+    "ts.external.directory.path": "/Applications/Aqua 2023.1 EAP.app/Contents/plugins/javascript-impl/jsLanguageServicesImpl/external",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/cypress/e2e/web-driver-uni" />
@@ -108,7 +107,7 @@
     </recent_temporary>
   </component>
   <component name="SeleniumInternalSettingsState">
-    <option name="lastUrl" value="http://webdriveruniversity.com/IFrame/index.html" />
+    <option name="lastUrl" value="http://webdriveruniversity.com/Autocomplete-TextField/autocomplete-textfield.html" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -123,7 +122,7 @@
       <workItem from="1691388070301" duration="2388000" />
       <workItem from="1691493747566" duration="2660000" />
       <workItem from="1691513978046" duration="604000" />
-      <workItem from="1691514829354" duration="58703000" />
+      <workItem from="1691514829354" duration="65657000" />
     </task>
     <task id="LOCAL-00001" summary="Added env file with url">
       <option name="closed" value="true" />
@@ -381,7 +380,15 @@
       <option name="project" value="LOCAL" />
       <updated>1692336702931</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="update checkboxes, radio buttons, dropdown list tests to page objects">
+      <option name="closed" value="true" />
+      <created>1692539902901</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1692539902901</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -451,7 +458,8 @@
     <MESSAGE value="update existing test" />
     <MESSAGE value="update iFrame tests" />
     <MESSAGE value="update Alerts tests to page objects" />
-    <option name="LAST_COMMIT_MESSAGE" value="update Alerts tests to page objects" />
+    <MESSAGE value="update checkboxes, radio buttons, dropdown list tests to page objects" />
+    <option name="LAST_COMMIT_MESSAGE" value="update checkboxes, radio buttons, dropdown list tests to page objects" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
