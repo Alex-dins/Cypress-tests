@@ -21,10 +21,15 @@ export class HomePage {
     }
 
     goToMouseActionPage() {
+        cy.visit("/");
         cy.get("#actions")
           .scrollIntoView()
           .invoke("removeAttr", "target")
           .click({force: true});
         return this;
+    }
+
+    goToFileUploadPage() {
+        return cy.selectedPage("#file-upload");
     }
 }

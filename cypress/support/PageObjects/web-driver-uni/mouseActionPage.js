@@ -8,7 +8,7 @@ export class MouseActionPage {
     }
 
     droppableElement() {
-        return cy.get("#droppable");
+        return cy.get("#droppable").as("dropPlace");
     }
 
 }

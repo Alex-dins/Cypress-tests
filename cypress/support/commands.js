@@ -1,3 +1,4 @@
+require("@4tw/cypress-drag-drop")
 Cypress.Commands.add("getByInput", (selector) => {
     cy.get(`input[${selector}]`);
 });

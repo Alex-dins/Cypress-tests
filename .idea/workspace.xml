@@ -5,9 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8b5d2542-460a-400f-a156-3423186337af" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/cypress/support/PageObjects/web-driver-uni/dropdownListPage.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cypress/e2e/web-driver-uni/07-File-upload.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cypress/fixtures/laptop.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cypress/support/PageObjects/web-driver-uni/fileUploadPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cypress/e2e/web-driver-uni/05-Dropdown-list.js" beforeDir="false" afterPath="$PROJECT_DIR$/cypress/e2e/web-driver-uni/05-Dropdown-list.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cypress/e2e/web-driver-uni/06-Mouse-actions.cy.js" beforeDir="false" afterPath="$PROJECT_DIR$/cypress/e2e/web-driver-uni/06-Mouse-actions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cypress/support/PageObjects/web-driver-uni/homePage.js" beforeDir="false" afterPath="$PROJECT_DIR$/cypress/support/PageObjects/web-driver-uni/homePage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cypress/support/PageObjects/web-driver-uni/mouseActionPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/cypress/support/PageObjects/web-driver-uni/mouseActionPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cypress/support/commands.js" beforeDir="false" afterPath="$PROJECT_DIR$/cypress/support/commands.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,17 +65,21 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "main",
+    "last_opened_file_path": "/Users/oleksandrklants/Student/Projects/Course-Cypress-tests/Cypress-test/cypress/fixtures",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "selenium.settings",
+    "settings.editor.selected.configurable": "swagger",
     "ts.external.directory.path": "/Applications/Aqua 2023.1 EAP.app/Contents/plugins/javascript-impl/jsLanguageServicesImpl/external",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/cypress/fixtures" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/cypress/e2e/web-driver-uni" />
     </key>
@@ -107,7 +120,7 @@
     </recent_temporary>
   </component>
   <component name="SeleniumInternalSettingsState">
-    <option name="lastUrl" value="http://webdriveruniversity.com/Autocomplete-TextField/autocomplete-textfield.html" />
+    <option name="lastUrl" value="http://webdriveruniversity.com/Login-Portal/index.html" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -122,7 +135,7 @@
       <workItem from="1691388070301" duration="2388000" />
       <workItem from="1691493747566" duration="2660000" />
       <workItem from="1691513978046" duration="604000" />
-      <workItem from="1691514829354" duration="65657000" />
+      <workItem from="1691514829354" duration="79565000" />
     </task>
     <task id="LOCAL-00001" summary="Added env file with url">
       <option name="closed" value="true" />
@@ -388,7 +401,15 @@
       <option name="project" value="LOCAL" />
       <updated>1692539902901</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="update dropdown list tests to page objects">
+      <option name="closed" value="true" />
+      <created>1692900352556</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1692900352556</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -459,7 +480,8 @@
     <MESSAGE value="update iFrame tests" />
     <MESSAGE value="update Alerts tests to page objects" />
     <MESSAGE value="update checkboxes, radio buttons, dropdown list tests to page objects" />
-    <option name="LAST_COMMIT_MESSAGE" value="update checkboxes, radio buttons, dropdown list tests to page objects" />
+    <MESSAGE value="update dropdown list tests to page objects" />
+    <option name="LAST_COMMIT_MESSAGE" value="update dropdown list tests to page objects" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

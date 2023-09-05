@@ -14,8 +14,7 @@ describe("Test Mouse-actions", () => {
         mouseActionPage.mainHeader("The Key to Success is to take massive ACTION!");
         mouseActionPage.draggableElement().find("b").should("have.text", "DRAG ME TO MY TARGET!");
         mouseActionPage.droppableElement().find("b").should("have.text", "DROP HERE!")
-        mouseActionPage.draggableElement().trigger("mousedown", {which: 1});
-        mouseActionPage.droppableElement().trigger("mousemove").trigger("mouseup", {force: true});
+        mouseActionPage.draggableElement().drag("@dropPlace", {force: true});
         mouseActionPage.droppableElement().find("p")
                        .should("have.css", "background-color", "rgb(244, 89, 80)");
         mouseActionPage.droppableElement().find("b").should("have.text", "Dropped!");
