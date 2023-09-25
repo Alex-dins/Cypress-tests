@@ -18,6 +18,15 @@ describe("Test Mouse-actions", () => {
         mouseActionPage.droppableElement().find("p")
                        .should("have.css", "background-color", "rgb(244, 89, 80)");
         mouseActionPage.droppableElement().find("b").should("have.text", "Dropped!");
-
     })
+
+    it("Should perform double mouse click", () => {
+        mouseActionPage.doubleClickElement().dblclick();
+    });
+
+    it("Should be able to hold down the left mouse click button on a given element", () => {
+        mouseActionPage.clickAndHoldElement().then(($el) => {
+            expect($el).to.have.css("background-color", "rgb(0, 255, 0)");
+        });
+    });
 })

@@ -11,4 +11,11 @@ export class MouseActionPage {
         return cy.get("#droppable").as("dropPlace");
     }
 
+    doubleClickElement() {
+        return cy.get("#double-click");
+    }
+
+    clickAndHoldElement() {
+        return cy.get("#click-box").trigger("mousedown", {which: 1})
+    }
 }
