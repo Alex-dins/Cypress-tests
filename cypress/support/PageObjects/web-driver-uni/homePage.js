@@ -32,4 +32,13 @@ export class HomePage {
     goToFileUploadPage() {
         return cy.selectedPage("#file-upload");
     }
+
+    goToAccordionsPage() {
+        cy.visit("/");
+        cy.get("div.col-md-12")
+          .contains("ACCORDION & TEXT AFFECTS (APPEAR & DISAPPEAR)")
+          .invoke("removeAttr", "target")
+          .click({force: true});
+        return this;
+    }
 }
