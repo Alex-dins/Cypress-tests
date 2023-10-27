@@ -23,12 +23,7 @@ export class ContactUsPage {
     pathName() {
         return cy.location("pathname");
     }
-
-    // successfulMessage() {
-    //     cy.get("h1").contains("Thank You for your Message!");
-    //     cy.get("#fountainG").should("be.visible");
-    //     return this;
-    // }
+    
     getMessageHeader() {
         return cy.get("h1");
     }
@@ -37,7 +32,6 @@ export class ContactUsPage {
         return cy.get("#fountainG");
     }
 
-    // Define the successfulMessage function
     successfulMessage() {
         this.getMessageHeader();
         this.getLoadingSpinner();

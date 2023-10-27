@@ -5,18 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8b5d2542-460a-400f-a156-3423186337af" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cypress.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/cypress.config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cypress/e2e/web-driver-uni/01-Contact-us.js" beforeDir="false" afterPath="$PROJECT_DIR$/cypress/e2e/web-driver-uni/01-Contact-us.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cypress/e2e/web-driver-uni/02-Alerts.js" beforeDir="false" afterPath="$PROJECT_DIR$/cypress/e2e/web-driver-uni/02-Alerts.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cypress/e2e/web-driver-uni/04-Checkboxes.js" beforeDir="false" afterPath="$PROJECT_DIR$/cypress/e2e/web-driver-uni/04-Checkboxes.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cypress/e2e/web-driver-uni/06-Mouse-actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/cypress/e2e/web-driver-uni/06-Mouse-actions.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cypress/e2e/web-driver-uni/08-Accordions.js" beforeDir="false" afterPath="$PROJECT_DIR$/cypress/e2e/web-driver-uni/08-Accordions.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cypress/support/PageObjects/web-driver-uni/accordionsPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/cypress/support/PageObjects/web-driver-uni/accordionsPage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cypress/support/PageObjects/web-driver-uni/alertsPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/cypress/support/PageObjects/web-driver-uni/alertsPage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cypress/support/PageObjects/web-driver-uni/checkboxesPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/cypress/support/PageObjects/web-driver-uni/checkboxesPage.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cypress/support/PageObjects/web-driver-uni/contactUs.js" beforeDir="false" afterPath="$PROJECT_DIR$/cypress/support/PageObjects/web-driver-uni/contactUs.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cypress/support/PageObjects/web-driver-uni/mouseActionPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/cypress/support/PageObjects/web-driver-uni/mouseActionPage.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -158,7 +147,7 @@
       <workItem from="1695282396524" duration="3857000" />
       <workItem from="1695713508472" duration="85000" />
       <workItem from="1695714207735" duration="56000" />
-      <workItem from="1695714270093" duration="28439000" />
+      <workItem from="1695714270093" duration="28654000" />
     </task>
     <task id="LOCAL-00001" summary="Added env file with url">
       <option name="closed" value="true" />
@@ -456,7 +445,15 @@
       <option name="project" value="LOCAL" />
       <updated>1697111811206</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="Refactor existing tests">
+      <option name="closed" value="true" />
+      <created>1698435033961</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1698435033961</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -531,7 +528,8 @@
     <MESSAGE value="update mouse action test using plugin drag and drop" />
     <MESSAGE value="update mouse action test" />
     <MESSAGE value="Add new test &quot;Accordions&quot;" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add new test &quot;Accordions&quot;" />
+    <MESSAGE value="Refactor existing tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactor existing tests" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
