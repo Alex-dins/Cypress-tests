@@ -11,24 +11,41 @@ describe("Test accordions & text affects", () => {
     })
 
     it("Assert elements on the page", () => {
-        accordionsPage.mainHeader("Click on One of the Accordian Items Below!");
-        accordionsPage.lengthOfAccordions(4);
+        accordionsPage.mainHeader().contains("Click on One of the Accordian Items Below!");
+        accordionsPage.lengthOfAccordions().should("have.length", 4);
+        //Verify state of Loading text
+        accordionsPage.loadingText().should("have.text", "LOADING.. PLEASE WAIT..");
+        //After 5sec
+        accordionsPage.loadingText(10000).should("have.text", "LOADING COMPLETE.");
     });
 
     it("Should open first Accordion", () => {
-        accordionsPage.firstAccordionClass("have.class", "accordion");
+        accordionsPage.firstAccordionClass().should("have.class", "accordion");
         accordionsPage.firstAccordion().click();
-        accordionsPage.firstAccordionText("have.text", "Manual testing has for some time");
-        accordionsPage.firstAccordionClass("have.class", "accordion active");
+        accordionsPage.firstAccordionText().contains("Manual testing has for some time");
+        accordionsPage.firstAccordionClass().should("have.class", "accordion active");
     });
 
     it("Should open second Accordion", () => {
-        accordionsPage.secondAccordionClass("have.class", "accordion");
+        accordionsPage.secondAccordionClass().should("have.class", "accordion");
         accordionsPage.secondAccordion().click();
-        accordionsPage.secondAccordionText("have.text",
-            "Cucumber (BDD) simplifies the requirement");
-        accordionsPage.secondAccordionClass("have.class", "accordion active");
+        accordionsPage.secondAccordionText().contains("Cucumber (BDD) simplifies the requirement");
+        accordionsPage.secondAccordionClass().should("have.class", "accordion active");
     });
 
+    it("Should open third Accordion", () => {
+        accordionsPage.thirdAccordionClass().should("have.class", "accordion");
+        accordionsPage.thirdAccordion().click();
+        accordionsPage.thirdAccordionText().contains("Automation testing has been steadily grown");
+        accordionsPage.thirdAccordionClass().should("have.class", "accordion active");
+    });
+
+    it("Should wait 5sec and open fourth Accordion", () => {
+        accordionsPage.fourthAccordionClass().should("have.class", "accordion");
+        //Wait 5sec and click
+        accordionsPage.fourthAccordion().click();
+        accordionsPage.fourthAccordionText().contains("This text has appeared after 5 seconds!");
+        accordionsPage.fourthAccordionClass().should("have.class", "accordion active");
+    });
 
 })

@@ -11,7 +11,7 @@ describe("Test Mouse-actions", () => {
     })
 
     it("Should be able drag and drop elements", () => {
-        mouseActionPage.mainHeader("The Key to Success is to take massive ACTION!");
+        mouseActionPage.mainHeader().contains("The Key to Success is to take massive ACTION!");
         mouseActionPage.draggableElement().find("b").should("have.text", "DRAG ME TO MY TARGET!");
         mouseActionPage.droppableElement().find("b").should("have.text", "DROP HERE!")
         mouseActionPage.draggableElement().drag("@dropPlace", {force: true});

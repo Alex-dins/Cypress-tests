@@ -1,6 +1,6 @@
 export class MouseActionPage {
-    mainHeader(expectedTxt) {
-        return cy.get("#main-header").contains(expectedTxt);
+    mainHeader() {
+        return cy.get("#main-header");
     }
 
     draggableElement() {

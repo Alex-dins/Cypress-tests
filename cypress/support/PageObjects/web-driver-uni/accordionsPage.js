@@ -1,33 +1,66 @@
 export class AccordionsPage {
-    mainHeader(expectedTxt) {
-        return cy.get("h1").contains(expectedTxt);
+    mainHeader() {
+        return cy.get("h1");
     }
 
-    lengthOfAccordions(amount) {
-        return cy.get("div.col-lg-12").should("have.length", amount);
+    lengthOfAccordions() {
+        return cy.get("div.col-lg-12").find("button");
     }
 
+    loadingText(loadingTime = 0) {
+        return cy.get("p[id='hidden-text']", {timeout: loadingTime});
+    }
+
+//First Accordion
     firstAccordion() {
         return cy.get("#manual-testing-accordion");
     }
 
-    firstAccordionClass(attr, value) {
-        return cy.get("#manual-testing-accordion").should(attr, value);
+    firstAccordionClass() {
+        return cy.get("#manual-testing-accordion");
     }
 
-    firstAccordionText(attr, value) {
-        cy.get("p").eq(0).should(attr, value);
+    firstAccordionText() {
+        return cy.get("p").eq(0);
     }
 
-    secondAccordionClass(attr, value) {
-        return cy.get("#cucumber-accordion").should(attr, value);
+//Second Accordion
+    secondAccordionClass() {
+        return cy.get("#cucumber-accordion");
     }
 
     secondAccordion() {
         return cy.get("#cucumber-accordion");
     }
 
-    secondAccordionText(attr, value) {
-        cy.get("p").eq(1).should(attr, value);
+    secondAccordionText() {
+        return cy.get("p").eq(1);
+    }
+
+//Third Accordion
+    thirdAccordionClass() {
+        return cy.get("#automation-accordion");
+    }
+
+    thirdAccordion() {
+        return cy.get("#automation-accordion");
+    }
+
+    thirdAccordionText() {
+        return cy.get("p").eq(2);
+    }
+
+// Fourth Accordion
+    fourthAccordionClass() {
+        return cy.get("#click-accordion");
+    }
+
+    fourthAccordion() {
+        cy.wait(10000);
+        return cy.get("#click-accordion");
+    }
+
+    fourthAccordionText() {
+        return cy.get("div[id='timeout']");
     }
 }

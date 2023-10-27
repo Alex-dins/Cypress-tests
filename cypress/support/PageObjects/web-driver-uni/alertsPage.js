@@ -25,8 +25,8 @@ export class AlertsPage {
         return this;
     }
 
-    alertMessage(expectedTxt) {
-        cy.get("#confirm-alert-text").contains(expectedTxt);
+    alertMessage() {
+        return cy.get("#confirm-alert-text");
     }
 
     windowAlertClickCancel() {

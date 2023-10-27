@@ -1,7 +1,7 @@
 export class CheckboxesPage {
 
-    mainHeader(expectedTxt) {
-        return cy.get("h1").should("have.text", expectedTxt);
+    mainHeader() {
+        return cy.get("h1");
     }
 
     checkbox(option) {

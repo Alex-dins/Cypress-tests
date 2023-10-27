@@ -11,16 +11,22 @@ describe("Handle checkboxes", () => {
     })
 
     it("Validate and check checkboxes", () => {
-        checkboxesPage.mainHeader("Dropdown Menu(s), Checkboxe(s) & Radio Button(s)");
-        checkboxesPage.checkbox("option-3").should("be.checked");
+        checkboxesPage.mainHeader()
+                      .should("have.text", "Dropdown Menu(s), Checkboxe(s) & Radio Button(s)");
+        checkboxesPage.checkbox("option-3")
+                      .should("be.checked");
         checkboxesPage.checkbox()
                       .check(["option-1", "option-2", "option-4"])
                       .should("be.checked");
     })
 
     it("Validate and check radio buttons", () => {
-        checkboxesPage.radioButton().should("have.length", 5);
-        checkboxesPage.radioButton().last().check().should("be.checked");
+        checkboxesPage.radioButton()
+                      .should("have.length", 5);
+        checkboxesPage.radioButton()
+                      .last()
+                      .check()
+                      .should("be.checked");
     })
 
     it("Validate the state of specific radio buttons", () => {

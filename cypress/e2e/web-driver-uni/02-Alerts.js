@@ -21,12 +21,12 @@ describe("Handling js alerts", () => {
     it("Confirm js alert when clicking ok", () => {
         alertPage.confirmBoxClickMeButton().click();
         alertPage.windowAlertClickOk();
-        alertPage.alertMessage("You pressed OK!");
+        alertPage.alertMessage().contains("You pressed OK!");
     })
 
     it("Confirm js alert when clicking cancel", () => {
         alertPage.confirmBoxClickMeButton().click();
         alertPage.windowAlertClickCancel();
-        alertPage.alertMessage("You pressed Cancel!");
+        alertPage.alertMessage().contains("You pressed Cancel!");
     })
 });

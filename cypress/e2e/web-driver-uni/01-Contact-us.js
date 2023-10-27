@@ -27,7 +27,9 @@ describe("Test contact us form via WebDriverUni", () => {
         contactUsPage.emailInput().type(data.email);
         contactUsPage.commentInput().type(data.message);
         contactUsPage.submitButton().click();
-        contactUsPage.successfulMessage();
+        contactUsPage.successfulMessage().getMessageHeader()
+                     .contains("Thank You for your Message!");
+        contactUsPage.successfulMessage().getLoadingSpinner().should("be.visible");
     });
     // Unsuccessful submission
     it("Should not be able to submit a successful submission via contact us form as all fields are required",
