@@ -6,13 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="8b5d2542-460a-400f-a156-3423186337af" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cypress/e2e/web-driver-uni/05-Dropdown-list.js" beforeDir="false" afterPath="$PROJECT_DIR$/cypress/e2e/web-driver-uni/05-Dropdown-list.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cypress/e2e/web-driver-uni/06-Mouse-actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/cypress/e2e/web-driver-uni/06-Mouse-actions.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cypress/support/PageObjects/web-driver-uni/dropdownListPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/cypress/support/PageObjects/web-driver-uni/dropdownListPage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cypress/support/PageObjects/web-driver-uni/mouseActionPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/cypress/support/PageObjects/web-driver-uni/mouseActionPage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cypress/support/commands.js" beforeDir="false" afterPath="$PROJECT_DIR$/cypress/support/commands.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,6 +27,20 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "Alex-dins"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="c8d19e15-3d9b-42f2-b61f-2d5c348db302" />
+        <option name="url" value="https://github.com/Alex-dins/Cypress-tests.git" />
+      </UrlAndAccount>
+    </option>
   </component>
   <component name="JsBowerSettings">
     <bower-package value="" />
@@ -157,7 +165,7 @@
       <workItem from="1695714207735" duration="56000" />
       <workItem from="1695714270093" duration="34531000" />
       <workItem from="1699185095771" duration="83000" />
-      <workItem from="1699186931134" duration="937000" />
+      <workItem from="1699186931134" duration="1701000" />
     </task>
     <task id="LOCAL-00001" summary="Added env file with url">
       <option name="closed" value="true" />
@@ -471,7 +479,15 @@
       <option name="project" value="LOCAL" />
       <updated>1698435146199</updated>
     </task>
-    <option name="localTasksCounter" value="40" />
+    <task id="LOCAL-00040" summary="Add hover test to mouse action page">
+      <option name="closed" value="true" />
+      <created>1699216685044</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1699216685044</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -527,6 +543,7 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Added env file with url" />
     <MESSAGE value="update url" />
@@ -547,7 +564,8 @@
     <MESSAGE value="update mouse action test" />
     <MESSAGE value="Add new test &quot;Accordions&quot;" />
     <MESSAGE value="Refactor existing tests" />
-    <option name="LAST_COMMIT_MESSAGE" value="Refactor existing tests" />
+    <MESSAGE value="Add hover test to mouse action page" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add hover test to mouse action page" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

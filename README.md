@@ -13,3 +13,10 @@ Status: Ongoing
 In this test, I use the drag-and-drop plugin.
 
 You can find more information about this plugin here: [drag-and-drop](https://github.com/4teamwork/cypress-drag-drop)
+
+### "Hover over" test
+
+Another great plugin for using hovers over feature is "cypress-real-events"
+
+You can find more information about this plugin
+here: [cypress-real-events](https://github.com/dmtrKovalenko/cypress-real-events)
