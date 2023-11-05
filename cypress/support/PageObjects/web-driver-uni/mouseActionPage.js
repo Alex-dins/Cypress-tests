@@ -18,4 +18,12 @@ export class MouseActionPage {
     clickAndHoldElement() {
         return cy.get("#click-box").trigger("mousedown", {which: 1})
     }
+
+    firstHoverButton() {
+        return cy.get("button.dropbtn").eq(0)
+    }
+
+    link1() {
+        return cy.get("a.list-alert").contains("Link 1")
+    }
 }

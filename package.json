@@ -4,5 +4,8 @@
   "devDependencies": {
     "@4tw/cypress-drag-drop": "^2.2.4",
     "cypress": "*"
+  },
+  "dependencies": {
+    "cypress-real-events": "^1.10.3"
   }
 }

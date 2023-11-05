@@ -1,6 +1,6 @@
 export class DropdownListPage {
-    mainHeader(expectedTxt) {
-        return cy.get("h2").should("have.text", expectedTxt);
+    mainHeader() {
+        return cy.get("h2");
     }
 
     logo() {

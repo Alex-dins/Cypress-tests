@@ -1,4 +1,6 @@
 require("@4tw/cypress-drag-drop")
+import "cypress-real-events";
+
 Cypress.Commands.add("getByInput", (selector) => {
     cy.get(`input[${selector}]`);
 });

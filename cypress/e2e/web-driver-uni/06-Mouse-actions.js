@@ -29,4 +29,13 @@ describe("Test Mouse-actions", () => {
             expect($el).to.have.css("background-color", "rgb(0, 255, 0)");
         });
     });
+
+    it("should be able to hover the element and click to the link", () => {
+        mouseActionPage.firstHoverButton().realHover();
+        mouseActionPage.link1().click();
+        cy.on("window:alert", (str) => {
+            expect(str).to.eq("Well done you clicked on the link!");
+        })
+
+    });
 })

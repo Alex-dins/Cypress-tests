@@ -11,7 +11,7 @@ describe("Verify dropdown list", () => {
     })
 
     it("should select specific product from list", () => {
-        dropdownListPage.mainHeader("Autocomplete TextField");
+        dropdownListPage.mainHeader().should("have.text", "Autocomplete TextField");
         dropdownListPage.logo().should("be.visible");
         dropdownListPage.inputField().type("A");
         dropdownListPage.selectProductList("Avacado");
