@@ -25,17 +25,13 @@ describe("Test Mouse-actions", () => {
     });
 
     it("Should be able to hold down the left mouse click button on a given element", () => {
-        mouseActionPage.clickAndHoldElement().then(($el) => {
-            expect($el).to.have.css("background-color", "rgb(0, 255, 0)");
-        });
+        mouseActionPage.clickAndHoldElement();
+        mouseActionPage.expectedElementColor("rgb(0, 255, 0)");
     });
 
-    it("should be able to hover the element and click to the link", () => {
+    it("Should be able to hover the element and click to the link", () => {
         mouseActionPage.firstHoverButton().realHover();
         mouseActionPage.link1().click();
-        cy.on("window:alert", (str) => {
-            expect(str).to.eq("Well done you clicked on the link!");
-        })
-
+        mouseActionPage.assertAlertWindowText("Well done you clicked on the link!")
     });
 })
