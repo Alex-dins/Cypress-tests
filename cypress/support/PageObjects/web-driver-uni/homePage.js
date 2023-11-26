@@ -1,7 +1,6 @@
 export class HomePage {
     goToContactUsPage() {
         return cy.selectedPage("#contact-us");
-
     }
 
     goToAlertsPage() {
