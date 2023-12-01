@@ -20,32 +20,33 @@ describe("Test accordions & text affects", () => {
     });
 
     it("Should open first Accordion", () => {
-        accordionsPage.firstAccordionClass().should("have.class", "accordion");
+        accordionsPage.firstAccordion().should("have.class", "accordion");
         accordionsPage.firstAccordion().click();
         accordionsPage.firstAccordionText().contains("Manual testing has for some time");
-        accordionsPage.firstAccordionClass().should("have.class", "accordion active");
+        accordionsPage.firstAccordion().should("have.class", "accordion active");
     });
 
     it("Should open second Accordion", () => {
-        accordionsPage.secondAccordionClass().should("have.class", "accordion");
+        accordionsPage.secondAccordion().should("have.class", "accordion");
         accordionsPage.secondAccordion().click();
         accordionsPage.secondAccordionText().contains("Cucumber (BDD) simplifies the requirement");
-        accordionsPage.secondAccordionClass().should("have.class", "accordion active");
+        accordionsPage.secondAccordion().should("have.class", "accordion active");
     });
 
     it("Should open third Accordion", () => {
-        accordionsPage.thirdAccordionClass().should("have.class", "accordion");
+        accordionsPage.thirdAccordion().should("have.class", "accordion");
         accordionsPage.thirdAccordion().click();
         accordionsPage.thirdAccordionText().contains("Automation testing has been steadily grown");
-        accordionsPage.thirdAccordionClass().should("have.class", "accordion active");
+        accordionsPage.thirdAccordion().should("have.class", "accordion active");
     });
 
     it("Should wait 5sec and open fourth Accordion", () => {
-        accordionsPage.fourthAccordionClass().should("have.class", "accordion");
+        accordionsPage.fourthAccordion().should("have.class", "accordion");
         //Wait 5sec and click
+        accordionsPage.waitForAccordion(10000)
         accordionsPage.fourthAccordion().click();
         accordionsPage.fourthAccordionText().contains("This text has appeared after 5 seconds!");
-        accordionsPage.fourthAccordionClass().should("have.class", "accordion active");
+        accordionsPage.fourthAccordion().should("have.class", "accordion active");
     });
 
 })

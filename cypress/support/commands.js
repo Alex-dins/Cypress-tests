@@ -2,7 +2,7 @@ require("@4tw/cypress-drag-drop")
 import "cypress-real-events";
 
 Cypress.Commands.add("getByInput", (selector) => {
-    cy.get(`input[${selector}]`);
+   return cy.get(`input[${selector}]`);
 });
 Cypress.Commands.add("selectedPage", (selectedPage) => {
     cy.visit("/");
@@ -17,8 +17,8 @@ Cypress.Commands.add("selectedPage", (selectedPage) => {
       .click({force: true});
 });
 Cypress.Commands.add("getByValue", (selector) => {
-    cy.get(`[value=${selector}]`);
+    return cy.get(`[value=${selector}]`);
 });
 Cypress.Commands.add("getByDropdownMenu", (nbr) => {
-    cy.get(`#dropdowm-menu-${nbr}`);
+    return cy.get(`#dropdowm-menu-${nbr}`);
 });

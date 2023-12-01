@@ -16,18 +16,11 @@ export class AccordionsPage {
         return cy.get("#manual-testing-accordion");
     }
 
-    firstAccordionClass() {
-        return cy.get("#manual-testing-accordion");
-    }
-
     firstAccordionText() {
         return cy.get("p").eq(0);
     }
 
 //Second Accordion
-    secondAccordionClass() {
-        return cy.get("#cucumber-accordion");
-    }
 
     secondAccordion() {
         return cy.get("#cucumber-accordion");
@@ -38,9 +31,6 @@ export class AccordionsPage {
     }
 
 //Third Accordion
-    thirdAccordionClass() {
-        return cy.get("#automation-accordion");
-    }
 
     thirdAccordion() {
         return cy.get("#automation-accordion");
@@ -51,13 +41,16 @@ export class AccordionsPage {
     }
 
 // Fourth Accordion
-    fourthAccordionClass() {
+//     fourthAccordionClass() {
+//         return cy.get("#click-accordion");
+//     }
+
+    fourthAccordion() {
         return cy.get("#click-accordion");
     }
 
-    fourthAccordion() {
-        cy.wait(10000);
-        return cy.get("#click-accordion");
+    waitForAccordion(time){
+       return this.fourthAccordion().wait(time);
     }
 
     fourthAccordionText() {
