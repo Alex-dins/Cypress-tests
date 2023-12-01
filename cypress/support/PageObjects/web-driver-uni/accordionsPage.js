@@ -21,7 +21,6 @@ export class AccordionsPage {
     }
 
 //Second Accordion
-
     secondAccordion() {
         return cy.get("#cucumber-accordion");
     }
@@ -31,7 +30,6 @@ export class AccordionsPage {
     }
 
 //Third Accordion
-
     thirdAccordion() {
         return cy.get("#automation-accordion");
     }
@@ -41,10 +39,6 @@ export class AccordionsPage {
     }
 
 // Fourth Accordion
-//     fourthAccordionClass() {
-//         return cy.get("#click-accordion");
-//     }
-
     fourthAccordion() {
         return cy.get("#click-accordion");
     }
