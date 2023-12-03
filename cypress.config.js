@@ -6,7 +6,6 @@ module.exports = defineConfig({
         baseUrl: "http://webdriveruniversity.com",
         specPattern: "cypress/e2e/**/*.{js,jsx,ts,tsx,feature}",
         chromeWebSecurity: false,
-        experimentalSessionAndOrigin: true,
         videoUploadOnPasses: false
     },
 })

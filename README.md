@@ -21,6 +21,10 @@ Run `npm test` (or `npm t` for the short version) to run the tests in headless m
 
 Or, run `npm run cy:open` to open the Cypress App and run the tests in interactive mode.
 
+## Continuous Integration (CI) with GitHub Actions
+
+In this repository you can find the continuous integration to run Cypress tests also on GitHub Actions workflows
+
 ### "Mouse Action" test
 
 In this test, I use the drag-and-drop plugin.
