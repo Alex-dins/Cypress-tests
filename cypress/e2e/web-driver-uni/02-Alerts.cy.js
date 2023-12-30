@@ -1,6 +1,7 @@
 /// <reference types = "Cypress" />
 import {HomePage} from "../../support/PageObjects/web-driver-uni/homePage";
 import {AlertsPage} from "../../support/PageObjects/web-driver-uni/alertsPage";
+import {AlertsPageContent} from "../../support/PageContents/web-driver-uni/alertsPageContent";
 
 const homePage = new HomePage();
 const alertPage = new AlertsPage();
@@ -13,20 +14,20 @@ describe("Handling js alerts", () => {
     })
 
     it("Confirm js alert contains the correct text", () => {
-        alertPage.mainHeader().should("have.text", "Annoying Popup & Alerts!");
+        alertPage.mainHeader().should("have.text", AlertsPageContent.headerText);
         alertPage.alertClickMeButton().click();
-        alertPage.windowAlertText("I am an alert box!");
+        alertPage.windowAlertText(AlertsPageContent.alertText);
     });
 
     it("Confirm js alert when clicking ok", () => {
         alertPage.confirmBoxClickMeButton().click();
         alertPage.windowAlertClickOk();
-        alertPage.alertMessage().contains("You pressed OK!");
+        alertPage.alertMessage().contains(AlertsPageContent.alertTextPressOk);
     })
 
     it("Confirm js alert when clicking cancel", () => {
         alertPage.confirmBoxClickMeButton().click();
         alertPage.windowAlertClickCancel();
-        alertPage.alertMessage().contains("You pressed Cancel!");
+        alertPage.alertMessage().contains(AlertsPageContent.alertTextPressCancel);
     })
 });
