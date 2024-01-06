@@ -1,6 +1,7 @@
 /// <reference types = "Cypress" />
 import {ContactUsPage} from "../../support/PageObjects/web-driver-uni/contactUs";
 import {HomePage} from "../../support/PageObjects/web-driver-uni/homePage";
+import {ContactUsPageContent} from "../../support/PageContents/web-driver-uni/contactUsPageContent";
 
 const contactUsPage = new ContactUsPage();
 const homePage = new HomePage();
@@ -20,15 +21,15 @@ describe("Test contact us form via WebDriverUni", () => {
     // Successful submission
     it("Should be able to submit a successful submission via contact us form", () => {
         contactUsPage.checkMetaData();
-        contactUsPage.header().should("have.text", "CONTACT US");
-        contactUsPage.firstNameInput().should("have.attr", "placeholder", "First Name");
+        contactUsPage.header().should("have.text", ContactUsPageContent.headerText);
+        contactUsPage.firstNameInput().should("have.attr", "placeholder", ContactUsPageContent.nameInputText);
         contactUsPage.firstNameInput().type(data.firstName);
         contactUsPage.lastNameInput().type(data.lastName);
         contactUsPage.emailInput().type(data.email);
         contactUsPage.commentInput().type(data.message);
         contactUsPage.submitButton().click();
         contactUsPage.successfulMessage().getMessageHeader()
-                     .contains("Thank You for your Message!");
+                     .contains(ContactUsPageContent.successfulMessageText);
         contactUsPage.successfulMessage().getLoadingSpinner().should("be.visible");
     });
     // Unsuccessful submission
@@ -39,7 +40,7 @@ describe("Test contact us form via WebDriverUni", () => {
             contactUsPage.lastNameInput().type(data.lastName);
             contactUsPage.commentInput().type(data.message);
             contactUsPage.submitButton().click();
-            contactUsPage.errorMessage().contains("Error: all fields are required");
+            contactUsPage.errorMessage().contains(ContactUsPageContent.errorMessageText);
         });
 })
 
