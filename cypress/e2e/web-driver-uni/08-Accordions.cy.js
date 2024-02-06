@@ -14,10 +14,6 @@ describe("Test accordions & text affects", () => {
     it("Assert elements on the page", () => {
         accordionsPage.mainHeader().contains(AccordionPageContent.headerText);
         accordionsPage.lengthOfAccordions().should("have.length", 4);
-        //Verify state of Loading text
-        accordionsPage.loadingText().should("have.text", AccordionPageContent.loadingTextWait);
-        //After 5sec
-        accordionsPage.loadingText(10000).should("have.text", AccordionPageContent.loadingTextComplete);
     });
 
     it("Should open first Accordion", () => {
@@ -43,8 +39,10 @@ describe("Test accordions & text affects", () => {
 
     it("Should wait 5sec and open fourth Accordion", () => {
         accordionsPage.fourthAccordion().should("have.class", AccordionPageContent.accordions.fourth.inactiveClass);
+        accordionsPage.loadingText().should("have.text", AccordionPageContent.loadingTextWait);
         //Wait 5sec and click
         accordionsPage.waitForAccordion(10000)
+        accordionsPage.loadingText().should("have.text", AccordionPageContent.loadingTextComplete);
         accordionsPage.fourthAccordion().click();
         accordionsPage.fourthAccordionText().contains(AccordionPageContent.accordions.fourth.text);
         accordionsPage.fourthAccordion().should("have.class", AccordionPageContent.accordions.fourth.activeClass);

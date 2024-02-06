@@ -7,8 +7,8 @@ export class AccordionsPage {
         return cy.get("div.col-lg-12").find("button");
     }
 
-    loadingText(loadingTime = 0) {
-        return cy.get("p[id='hidden-text']", {timeout: loadingTime});
+    loadingText() {
+        return cy.get("p[id='hidden-text']");
     }
 
 //First Accordion
