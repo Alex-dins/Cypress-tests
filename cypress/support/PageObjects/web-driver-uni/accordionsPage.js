@@ -1,32 +1,50 @@
 export class AccordionsPage {
+
+    locators = {
+        mainHeader: "h1",
+        accordionBlock: "div.col-lg-12",
+        loadingText: "#hidden-text",
+        accordions: {
+            first:{
+                firstAccordionButton: "#manual-testing-accordion",
+                firstAccordionText: "p"
+            },
+            second:{
+                secondAccordionButton: "#cucumber-accordion",
+                secondAccordionText: "p"
+            },
+        }
+
+    }
     mainHeader() {
-        return cy.get("h1");
+        return cy.get(this.locators.mainHeader);
     }
 
     lengthOfAccordions() {
-        return cy.get("div.col-lg-12").find("button");
+        return cy.get(this.locators.accordionBlock).find("button");
     }
 
     loadingText() {
-        return cy.get("p[id='hidden-text']");
+        return cy.get(this.locators.loadingText);
+        // return cy.get("p[id='hidden-text']");
     }
 
 //First Accordion
     firstAccordion() {
-        return cy.get("#manual-testing-accordion");
+        return cy.get(this.locators.accordions.first.firstAccordionButton);
     }
 
     firstAccordionText() {
-        return cy.get("p").eq(0);
+        return cy.get(this.locators.accordions.first.firstAccordionText).eq(0);
     }
 
 //Second Accordion
     secondAccordion() {
-        return cy.get("#cucumber-accordion");
+        return cy.get(this.locators.accordions.second.secondAccordionButton);
     }
 
     secondAccordionText() {
-        return cy.get("p").eq(1);
+        return cy.get(this.locators.accordions.second.secondAccordionText).eq(1);
     }
 
 //Third Accordion

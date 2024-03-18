@@ -1,21 +1,27 @@
 export class AlertsPage {
+
+    locators = {
+        mainHeader: 'h1',
+        alertClickMeButton: '#button1',
+        confirmButton: '#button4',
+        alertMessage: '#confirm-alert-text'
+    }
     mainHeader() {
-        return cy.get("h1");
+        return cy.get(this.locators.mainHeader);
     }
 
     alertClickMeButton() {
-        return cy.get("#button1");
+        return cy.get(this.locators.alertClickMeButton);
     }
 
-    windowAlertText(expectedTxt) {
-        cy.on("window:alert", (str) => {
-            expect(str).to.eq(expectedTxt)
+    windowAlertText(expectedText) {
+        return cy.on('window:alert', (text) => {
+            expect(text).to.eq(expectedText);
         });
-        return this;
     }
 
     confirmBoxClickMeButton() {
-        return cy.get("#button4");
+        return cy.get(this.locators.confirmButton);
     }
 
     windowAlertClickOk() {
@@ -26,7 +32,7 @@ export class AlertsPage {
     }
 
     alertMessage() {
-        return cy.get("#confirm-alert-text");
+        return cy.get(this.locators.alertMessage);
     }
 
     windowAlertClickCancel() {
