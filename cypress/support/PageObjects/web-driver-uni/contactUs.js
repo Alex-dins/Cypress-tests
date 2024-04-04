@@ -1,35 +1,47 @@
 export class ContactUsPage {
 
+    locators = {
+        firstname: "name=first_name",
+        lastname: "name=last_name",
+        email: "name=email",
+        comment: "textarea[name='message']",
+        submitButton: "type=submit",
+        pathName: "pathname",
+        messageHeader: "h1",
+        loaderSpinner: "#fountainG",
+        errorMessage: "body",
+        sectionHeader: ".section_header"
+    }
     firstNameInput() {
-        return cy.getByInput("name=first_name");
+        return cy.getByInput(this.locators.firstname);
     }
 
     lastNameInput() {
-        return cy.getByInput("name=last_name");
+        return cy.getByInput(this.locators.lastname);
     }
 
     emailInput() {
-        return cy.getByInput("name=email");
+        return cy.getByInput(this.locators.email);
     }
 
     commentInput() {
-        return cy.get("textarea[name='message']");
+        return cy.get(this.locators.comment);
     }
 
     submitButton() {
-        return cy.getByInput("type=submit");
+        return cy.getByInput(this.locators.submitButton);
     }
 
     pathName() {
-        return cy.location("pathname");
+        return cy.location(this.locators.pathName);
     }
     
     getMessageHeader() {
-        return cy.get("h1");
+        return cy.get(this.locators.messageHeader);
     }
 
     getLoadingSpinner() {
-        return cy.get("#fountainG");
+        return cy.get(this.locators.loaderSpinner);
     }
 
     successfulMessage() {
@@ -39,11 +51,11 @@ export class ContactUsPage {
     }
 
     errorMessage() {
-        return cy.get("body");
+        return cy.get(this.locators.errorMessage);
     }
 
     header() {
-        return cy.get(".section_header");
+        return cy.get(this.locators.sectionHeader);
     }
 
     checkMetaData() {

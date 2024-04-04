@@ -1,14 +1,19 @@
 export class CheckboxesPage {
 
+    locators = {
+        mainHeader: "h1",
+        checkbox: "#checkboxes",
+        radioButton: "#radio-buttons"
+    }
     mainHeader() {
-        return cy.get("h1");
+        return cy.get(this.locators.mainHeader);
     }
 
     checkbox(option) {
-        return cy.get("#checkboxes").find("input", option);
+        return cy.get(this.locators.checkbox).find("input", option);
     }
 
     radioButton() {
-        return cy.get("#radio-buttons").find("input");
+        return cy.get(this.locators.checkbox).find("input");
     }
 }

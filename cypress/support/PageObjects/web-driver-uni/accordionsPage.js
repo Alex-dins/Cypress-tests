@@ -4,14 +4,20 @@ export class AccordionsPage {
         mainHeader: "h1",
         accordionBlock: "div.col-lg-12",
         loadingText: "#hidden-text",
+        accordionText: "p",
         accordions: {
             first:{
                 firstAccordionButton: "#manual-testing-accordion",
-                firstAccordionText: "p"
             },
             second:{
                 secondAccordionButton: "#cucumber-accordion",
-                secondAccordionText: "p"
+            },
+            third: {
+                thirdAccordionButton: "automation-accordion"
+            },
+            fourth: {
+                fourthAccordionButton: "#click-accordion",
+                fourthAccordionText: "div[id='timeout']"
             },
         }
 
@@ -26,7 +32,6 @@ export class AccordionsPage {
 
     loadingText() {
         return cy.get(this.locators.loadingText);
-        // return cy.get("p[id='hidden-text']");
     }
 
 //First Accordion
@@ -35,7 +40,7 @@ export class AccordionsPage {
     }
 
     firstAccordionText() {
-        return cy.get(this.locators.accordions.first.firstAccordionText).eq(0);
+        return cy.get(this.locators.accordionText).eq(0);
     }
 
 //Second Accordion
@@ -44,21 +49,21 @@ export class AccordionsPage {
     }
 
     secondAccordionText() {
-        return cy.get(this.locators.accordions.second.secondAccordionText).eq(1);
+        return cy.get(this.locators.accordionText).eq(1);
     }
 
 //Third Accordion
     thirdAccordion() {
-        return cy.get("#automation-accordion");
+        return cy.get(this.locators.accordions.third.thirdAccordionButton);
     }
 
     thirdAccordionText() {
-        return cy.get("p").eq(2);
+        return cy.get(this.locators.accordionText).eq(2);
     }
 
 // Fourth Accordion
     fourthAccordion() {
-        return cy.get("#click-accordion");
+        return cy.get(this.locators.accordions.fourth.fourthAccordionButton);
     }
 
     waitForAccordion(time){
@@ -66,6 +71,6 @@ export class AccordionsPage {
     }
 
     fourthAccordionText() {
-        return cy.get("div[id='timeout']");
+        return cy.get(this.locators.accordions.fourth.fourthAccordionText);
     }
 }
