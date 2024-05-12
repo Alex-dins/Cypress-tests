@@ -13,7 +13,7 @@ export class AccordionsPage {
                 secondAccordionButton: "#cucumber-accordion",
             },
             third: {
-                thirdAccordionButton: "automation-accordion"
+                thirdAccordionButton: "#automation-accordion"
             },
             fourth: {
                 fourthAccordionButton: "#click-accordion",
