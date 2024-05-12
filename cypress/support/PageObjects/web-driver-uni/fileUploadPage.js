@@ -1,24 +1,24 @@
 export class FileUploadPage {
+
+    selectors = {
+        "mainHeader": 'h1',
+        "fileInput": '#myFile',
+        "submitButton": '#submit-button'
+    }
+
     mainHeader() {
-        return cy.get("h1");
+        return cy.get(this.selectors.mainHeader);
     }
 
     fileInput() {
-        return cy.get("#myFile");
+        return cy.get(this.selectors.fileInput);
     }
 
     submitButton() {
-        return cy.get("#submit-button");
+        return cy.get(this.selectors.submitButton);
     }
 
-    successMessage(expectedTxt) {
-        cy.on("window:alert", (str) => {
-            expect(str).contain(expectedTxt)
-        })
-        return this;
-    }
-
-    errorMessage(expectedTxt) {
+    message(expectedTxt) {
         cy.on("window:alert", (str) => {
             expect(str).contain(expectedTxt)
         })

@@ -1,4 +1,11 @@
 export class IFramePage {
+
+    locators = {
+        findOutMoreButton: "#button-find-out-more",
+        modalContent: ".modal-content",
+        modalWindow: "#myModal"
+    }
+
     getIframeElement() {
         return cy.get("#frame").its("0.contentDocument.body").then(cy.wrap);
         // Or we can use this approach:
@@ -10,15 +17,15 @@ export class IFramePage {
     }
 
     findOutMoreButton() {
-        return this.getIframeElement().find("#button-find-out-more");
+        return this.getIframeElement().find(this.locators.findOutMoreButton);
     }
 
     modalWindowContent() {
-        return this.getIframeElement().find(".modal-content")
+        return this.getIframeElement().find(this.locators.modalContent)
     }
 
     getModalWindow() {
-        return this.getIframeElement().find("#myModal");
+        return this.getIframeElement().find(this.locators.modalWindow);
 
     }
 

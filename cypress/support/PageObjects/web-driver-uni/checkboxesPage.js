@@ -14,6 +14,6 @@ export class CheckboxesPage {
     }
 
     radioButton() {
-        return cy.get(this.locators.checkbox).find("input");
+        return cy.get(this.locators.radioButton).find("input");
     }
 }

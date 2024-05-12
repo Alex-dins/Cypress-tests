@@ -1,18 +1,26 @@
 export class DropdownListPage {
+
+    locators = {
+        header: "h2",
+        logo: "#shop-logo",
+        inputField: "#myInput",
+        dropdownList: "#myInputautocomplete-list > *",
+        submitButton: "#submit-button"
+    }
     mainHeader() {
-        return cy.get("h2");
+        return cy.get(this.locators.header);
     }
 
     logo() {
-        return cy.get("#shop-logo");
+        return cy.get(this.locators.logo);
     }
 
     inputField() {
-        return cy.get("#myInput");
+        return cy.get(this.locators.inputField);
     }
 
     selectProductList(product) {
-        return cy.get("#myInputautocomplete-list > *")
+        return cy.get(this.locators.dropdownList)
                  .each(($el) => {
                      if ($el.text().includes(product)) {
                          $el.trigger("click");
@@ -21,7 +29,7 @@ export class DropdownListPage {
     }
 
     submitButton() {
-        return cy.get("#submit-button");
+        return cy.get(this.locators.submitButton);
     }
 
     url() {

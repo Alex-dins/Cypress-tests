@@ -15,11 +15,11 @@ describe("Verifying uploading a file", () => {
         fileUploadPage.mainHeader().should("have.text", FileUploadPageContent.headerText);
         fileUploadPage.fileInput().selectFile("cypress/fixtures/laptop.png");
         fileUploadPage.submitButton().click();
-        fileUploadPage.successMessage(FileUploadPageContent.successfulMessageText)
+        fileUploadPage.message(FileUploadPageContent.successfulMessageText)
     })
 
     it("Uploading without a file", () => {
         fileUploadPage.submitButton().click();
-        fileUploadPage.errorMessage(FileUploadPageContent.errorMessageText)
+        fileUploadPage.message(FileUploadPageContent.errorMessageText)
     })
 })

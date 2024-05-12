@@ -1,22 +1,33 @@
 export class MouseActionPage {
+
+    locators = {
+        mainHeader: "#main-header",
+        draggableElement: "#draggable",
+        droppableElement: "#droppable",
+        doubleClickBox: "#double-click",
+        clickAndHoldBox: "#click-box",
+        hoverButton: "button.dropbtn",
+        link: "a.list-alert"
+    }
+
     mainHeader() {
-        return cy.get("#main-header");
+        return cy.get(this.locators.mainHeader);
     }
 
     draggableElement() {
-        return cy.get("#draggable");
+        return cy.get(this.locators.draggableElement);
     }
 
     droppableElement() {
-        return cy.get("#droppable").as("dropPlace");
+        return cy.get(this.locators.droppableElement).as("dropPlace");
     }
 
     doubleClickElement() {
-        return cy.get("#double-click");
+        return cy.get(this.locators.doubleClickBox);
     }
 
     clickAndHoldElement() {
-        return cy.get("#click-box").trigger("mousedown", {which: 1})
+        return cy.get(this.locators.clickAndHoldBox).trigger("mousedown", {which: 1})
     }
 
     expectedElementColor(color) {
@@ -26,11 +37,11 @@ export class MouseActionPage {
     }
 
     firstHoverButton() {
-        return cy.get("button.dropbtn").eq(0)
+        return cy.get(this.locators.hoverButton).eq(0)
     }
 
     link1() {
-        return cy.get("a.list-alert").contains("Link 1")
+        return cy.get(this.locators.link).contains("Link 1")
     }
 
     assertAlertWindowText(text) {
